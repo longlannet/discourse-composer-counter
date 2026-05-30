@@ -2,7 +2,7 @@
   "name": "Composer Counter",
   "about_url": "https://github.com/longlannet/discourse-composer-counter",
   "license_url": "https://github.com/longlannet/discourse-composer-counter/blob/main/LICENSE",
-  "authors": "Lanny",
+  "authors": "Longlan",
   "component": true,
-  "theme_version": "v0.1.5"
+  "theme_version": "v0.1.6"
 }

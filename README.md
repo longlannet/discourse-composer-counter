@@ -1,6 +1,6 @@
 # Composer Counter
 
-Current version: `v0.1.5`
+Current version: `v0.1.6`
 
 A Discourse theme component based on `merefield/discourse-tc-character-count`.
 
