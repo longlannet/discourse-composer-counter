@@ -1,0 +1,34 @@
+composer_counter_hide_when_sufficient:
+  default: false
+  description:
+    en: "Hide the count once the required minimum length is reached."
+    zh_CN: "达到最低长度后隐藏计数。"
+composer_counter_show_title:
+  default: true
+  description:
+    en: "Show character count for the composer title."
+    zh_CN: "显示标题字符计数。"
+composer_counter_show_body:
+  default: true
+  description:
+    en: "Show character count for the composer body."
+    zh_CN: "显示正文字符计数。"
+composer_counter_format:
+  default: current_minimum
+  type: enum
+  choices:
+    - current_minimum
+    - remaining
+  description:
+    en: "Character count display format."
+    zh_CN: "字符计数显示格式。"
+composer_counter_current_minimum_template:
+  default: "%{current} / %{minimum}"
+  description:
+    en: "Template for current/minimum format. Available placeholders: %{current}, %{minimum}, %{remaining}."
+    zh_CN: "当前/最低格式模板。可用占位符：%{current}、%{minimum}、%{remaining}。"
+composer_counter_remaining_template:
+  default: ""
+  description:
+    en: "Optional custom remaining-text template. Available placeholders: %{remaining}, %{count}, %{current}, %{minimum}. Leave blank to use the localized default."
+    zh_CN: "可选的剩余字符提示模板。可用占位符：%{remaining}、%{count}、%{current}、%{minimum}。留空则使用多语言默认文案。"
