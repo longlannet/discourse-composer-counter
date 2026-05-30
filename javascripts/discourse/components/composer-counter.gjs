@@ -1,5 +1,4 @@
 import Component from "@glimmer/component";
-import { i18n } from "discourse-i18n";
 
 export default class ComposerCounter extends Component {
   get length() {
@@ -35,33 +34,10 @@ export default class ComposerCounter extends Component {
     });
   }
 
-  get currentMinimumText() {
-    return this.formatTemplate(
-      settings.composer_counter_current_minimum_template || "%{current} / %{minimum}"
-    );
-  }
-
-  get remainingText() {
-    const customTemplate = settings.composer_counter_remaining_template?.trim();
-
-    if (customTemplate) {
-      return this.formatTemplate(customTemplate);
-    }
-
-    return i18n("composer_counter.remaining", {
-      count: this.missingCharacters,
-    });
-  }
-
   get text() {
-    if (
-      settings.composer_counter_format === "remaining" &&
-      this.isInsufficient
-    ) {
-      return this.remainingText;
-    }
-
-    return this.currentMinimumText;
+    return this.formatTemplate(
+      settings.composer_counter_template || "%{current} / %{minimum}"
+    );
   }
 
   <template>

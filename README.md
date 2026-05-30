@@ -1,6 +1,6 @@
 # Composer Counter
 
-Current version: `v0.1.4`
+Current version: `v0.1.5`
 
 A Discourse theme component based on `merefield/discourse-tc-character-count`.
 
@@ -11,24 +11,20 @@ It shows live character counts for composer title and body, with a few extra set
 - Title character count
 - Body character count
 - `current / minimum` format
-- Optional `N characters remaining` format while below the minimum
+- Custom display template, for example `5 / 15` or `还差 10 个字符`
 - Red warning while below the minimum
 - Optionally hide counts after reaching the minimum
 - Toggle title/body counts separately
-- English and Simplified Chinese strings
 
 ## Settings
 
 - `composer_counter_hide_when_sufficient`
 - `composer_counter_show_title`
 - `composer_counter_show_body`
-- `composer_counter_format`
-  - `current_minimum`
-  - `remaining`
-- `composer_counter_current_minimum_template`
+- `composer_counter_template`
   - default: `%{current} / %{minimum}`
-- `composer_counter_remaining_template`
-  - optional override for remaining text, e.g. `还差 %{remaining} 个字符`
+  - available placeholders: `%{current}`, `%{minimum}`, `%{remaining}`, `%{count}`
+  - examples: `%{current} / %{minimum}`, `还差 %{remaining} 个字符`
 
 ## Install
 
