@@ -12,20 +12,21 @@
 }
 
 .title-input {
-  input {
+  #reply-title {
     padding-right: 4.5em;
   }
 
   .composer-counter {
     top: 0;
     right: 0.6em;
-    bottom: auto;
-    height: 100%;
-    line-height: 100%;
+    bottom: 0.5em;
+    height: auto;
+    line-height: 1;
     display: flex;
     align-items: center;
     transform: none;
     pointer-events: none;
+    white-space: nowrap;
     color: var(--primary-low-mid);
 
     &.more-required {
