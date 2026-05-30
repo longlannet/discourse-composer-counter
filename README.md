@@ -2,19 +2,21 @@
 
 Current version: `v0.1.6`
 
-A Discourse theme component based on `merefield/discourse-tc-character-count`.
+Author: Longlan
 
-It shows live character counts for composer title and body, with a few extra settings inspired by the official `discourse-characters-required` plugin.
+A Discourse theme component based on [`merefield/discourse-tc-character-count`](https://github.com/merefield/discourse-tc-character-count).
+
+It shows live character counts for the composer title and body, using Discourse's existing title/body length settings.
 
 ## Features
 
 - Title character count
 - Body character count
-- `current / minimum` format
+- Default `current / minimum` display
 - Custom display template, for example `5 / 15` or `还差 10 个字符`
-- Red warning while below the minimum
-- Optionally hide counts after reaching the minimum
-- Toggle title/body counts separately
+- Red warning while below the minimum length
+- Optionally hide counts after reaching the minimum length
+- Toggle title/body counters separately
 
 ## Settings
 
@@ -26,6 +28,15 @@ It shows live character counts for composer title and body, with a few extra set
   - available placeholders: `%{current}`, `%{minimum}`, `%{remaining}`, `%{count}`
   - examples: `%{current} / %{minimum}`, `还差 %{remaining} 个字符`
 
+## Notes
+
+Composer Counter does not define or enforce its own length limits. It reads the values already calculated by Discourse:
+
+- title length from the composer title model/site settings
+- body length from the composer body model/site settings
+
+If you change Discourse's minimum title/body length settings, the counter follows those values automatically.
+
 ## Install
 
 Install as a theme component from the Discourse admin UI using this repository URL:
@@ -33,7 +44,6 @@ Install as a theme component from the Discourse admin UI using this repository U
 ```text
 https://github.com/longlannet/discourse-composer-counter
 ```
-
 
 ## License
 
