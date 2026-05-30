@@ -3,5 +3,6 @@
   "about_url": "https://github.com/longlannet/discourse-composer-counter",
   "license_url": "https://github.com/longlannet/discourse-composer-counter/blob/main/LICENSE",
   "authors": "Lanny",
-  "component": true
+  "component": true,
+  "theme_version": "v0.1.3"
 }

@@ -1,5 +1,7 @@
 # Composer Counter
 
+Current version: `v0.1.3`
+
 A Discourse theme component based on `merefield/discourse-tc-character-count`.
 
 It shows live character counts for composer title and body, with a few extra settings inspired by the official `discourse-characters-required` plugin.
