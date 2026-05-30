@@ -12,10 +12,20 @@
 }
 
 .title-input {
+  input {
+    padding-right: 4.5em;
+  }
+
   .composer-counter {
-    top: 50%;
+    top: 0;
+    right: 0.6em;
     bottom: auto;
-    transform: translateY(-50%);
+    height: 100%;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    transform: none;
+    pointer-events: none;
     color: var(--primary-low-mid);
 
     &.more-required {
